@@ -24,7 +24,7 @@ const App = () => {
   const onSubmitHandler = (e) => {
     e.preventDefault();
     setQuery(search);
-    setSearch('');
+    setSearch('paneer');
 
 
   }      
@@ -33,7 +33,7 @@ const App = () => {
     <div className='main-header'>
     <div className="header">Recipe Book</div>
     <div className='input'>
-    <input type="text" onChange={ e => setSearch(e.target.value)}/>
+    <input type="text" placeholder='Search...' onChange={ e => setSearch(e.target.value)}/>
     </div>
     <div className='button'>
     <button varient='primary' size='lg'>Search</button>
